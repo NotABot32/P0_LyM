@@ -24,7 +24,7 @@ public class Parser {
 			
 				}
 				catch (Exception e) {
-					System.out.println("invalido");
+					
 					valido=false;
 				}
 				
@@ -38,7 +38,7 @@ public class Parser {
 				}
 				else {
 					valido=false;
-					System.out.println("invalido");	
+						
 				}
 				break;
 			case "(look":
@@ -51,7 +51,7 @@ public class Parser {
 				}
 				else {
 					valido=false;
-					System.out.println("invalido");
+					
 				}
 				break;
 				
@@ -62,7 +62,7 @@ public class Parser {
 			
 				}
 				catch (Exception e) {
-					System.out.println("invalido");
+					
 					valido=false;
 				}
 				break;
@@ -74,7 +74,7 @@ public class Parser {
 					
 					}
 					catch (Exception e) {
-						System.out.println("invalido");
+						
 						valido=false;
 					}
 				break;
@@ -85,7 +85,7 @@ public class Parser {
 					
 					}
 					catch (Exception e) {
-						System.out.println("invalido");
+						
 						valido=false;
 					}
 				break;
@@ -96,7 +96,7 @@ public class Parser {
 				
 					}
 					catch (Exception e) {
-						System.out.println("invalido");
+						
 						valido=false;
 					}
 				break;
@@ -109,7 +109,7 @@ public class Parser {
 					
 					}
 					catch (Exception e) {
-						System.out.println("invalido");
+						
 						valido=false;
 					}			
 				
@@ -119,7 +119,7 @@ public class Parser {
 					
 				}
 				else {
-					System.out.println("invalido");
+					
 					valido= false;
 				}
 					break;
@@ -127,7 +127,7 @@ public class Parser {
 				break;
 			default:
 				valido=false;
-				System.out.println("invalido");
+				
 				break;
 			}
 			st=br.readLine();
@@ -136,7 +136,8 @@ public class Parser {
 		if(valido){
 			System.out.println("el codigo ingresado es valido");
 		}
-		
+		else 
+		System.out.println("el codigo ingresado no es valido");
 		
 	
 }
