@@ -7,3 +7,5 @@
 (grab 112)
 (walkTo 7 S)
 (NOP)
+(define foo (param)value)
+(define foo 3)
