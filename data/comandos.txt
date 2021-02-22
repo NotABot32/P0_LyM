@@ -9,3 +9,4 @@
 (NOP)
 (define foo (param)value)
 (define foo 3)
+(walk foo)

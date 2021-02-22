@@ -11,7 +11,7 @@ public class Parser {
 
 	public static void main(String[] args) throws Exception 
 	{
-		Arbol arbol = new Arbol<String, String>();
+		Arbol<String, String> arbol = new Arbol<String, String>();
 		boolean valido = true; 
 		File f = new File("data/comandos.txt");
 		BufferedReader br = new BufferedReader(new FileReader(f));
@@ -25,8 +25,14 @@ public class Parser {
 
 			case "(walk":
 				try {
+					int numeroW = 0;
 					String numeroWS= linea[1].substring(0, linea[1].length()-1);
-					int numeroW = Integer.parseInt(numeroWS);
+					if (arbol.contains(numeroWS))
+					{
+						numeroW=Integer.parseInt(arbol.get(numeroWS));
+					}
+					else 
+						numeroW=Integer.parseInt(numeroWS);
 
 				}
 				catch (Exception e) {
